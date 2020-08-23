@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table id="id_persons_table">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+
+    <br><br><br>
+    <label for="id_name">Name</label> <input type="text" id="id_name"> <br><br>
+    <button type="button" id="id_add_person">Submit</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        String.prototype.format = function(){
+            a = this;
+            for (k in arguments) {
+                a = a.replace("{" + k + "}", arguments[k])
+            }
+            return a
+        }
+    </script>
+    <script src="2.js"></script>
+</body>
+</html>
